@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+/* 전체 페이지 스타일 */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: #f3f4f6;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+/* 회원가입 창 스타일 */
+.page-main {
+    width: 400px;
+    background: #e5e7eb;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding-bottom: 20px; /* 버튼과 테두리 사이 간격 */
+}
+
+/* 로고와 타이틀 */
+.login-title {
+    background: #e5e7eb;
+    text-align: center;
+    padding: 15px;
+}
+.login-title .navbar__logo {
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.login-title .navbar__logo i{
+    color: #d48566;
+}
+
+/* 입력 필드와 라벨 */
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+ul li {
+    margin-bottom: 15px;
+}
+ul li label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: bold; /* 글씨 굵게 */
+    margin-left: 10px; /* 좌측 여백 추가 */
+}
+ul li input {
+    width: 80%;
+    height: 24px; /* 입력칸 높이 줄임 */
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 0 auto; /* 입력 필드만 중앙으로 배치 */
+    display: block; /* 입력 필드가 block으로 중앙 정렬 */
+}
+/* 센터 코드 스타일 */
+.center-code {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* 체크박스 간 간격 */
+    margin-top: 10px;
+}
+.center-code div {
+    display: flex;
+    flex-direction: column; /* 텍스트를 체크박스 아래로 배치 */
+    align-items: center; /* 중앙 정렬 */
+}
+.center-code input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #000000; /* 네모형 체크박스 */
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 5px; /* 체크박스와 텍스트 간격 */
+}
+.center-code input[type="radio"]:checked {
+    background-color: #F3524C; /* 체크 시 붉은색 */
+}
+.center-code label {
+    font-size: 14px;
+    font-weight: bold;
+}
+.center-code input[type="radio"] {
+    margin-right: 5px; /* 체크박스와 텍스트 간격 */
+}
+
+/* 하단 버튼 */
+.buttons-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.buttons-row input {
+    width: 120px;
+    padding: 8px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background: #d48566;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.buttons-row input:hover {
+    background: #d48566;
+}

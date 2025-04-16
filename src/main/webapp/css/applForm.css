@@ -1,0 +1,151 @@
+.page-main{
+	display: flex;
+	
+	width:1450px;
+}	
+input[type="button"]{
+	cursor: pointer;
+}
+ /*전체  */
+ .container {
+    width: 840px;
+    border: 1px solid black;
+    margin: 20px 0;
+    padding: 20px;
+    font-weight:bold;
+}
+h2{
+    border-radius: 5px;
+    margin: 5px 0 10px 5px;
+    padding: 3px 10px;
+    background-color: #d9d9d9;
+    font-size: 30px;
+    width: 120px;
+    font-weight: bold;
+}
+form{
+    padding: 10px;
+}
+h3{
+   margin: 10px
+}
+label{
+    margin: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    display: inline;
+}
+.appl-radio{
+    display: flex;
+    margin: 0 0 0 0;
+}
+
+.appl-radio div{
+    margin: 0 50px 10px 0;
+}
+
+.radios{
+    background-color: #d9d9d9;
+    width: 220px;
+    height: 28px;
+    font-weight: bold;
+    padding: 2px 0 0 5px ;
+    border-radius: 3px;
+}
+.radios-2{
+    background-color: #d9d9d9;
+    width: 140px;
+    height: 28px;
+    font-weight: bold;
+    padding: 2px 0 0 5px ;
+    border-radius: 3px;
+}
+
+.radios input{
+	margin:5px;
+}
+/* textarea */
+textarea{
+    width: 780px;
+    resize: none;
+    background-color: #d9d9d9;
+    border: none;
+    padding: 0 10px;
+    font-size: 18px;
+    text-align: justify;
+    border-radius: 2px;
+    font-weight: bold;
+     caret-color: black; /* 깜빡이는 커서 색상 설정 */
+    visibility: visible; /* 커서가 보이도록 설정 */
+    opacity: 1; /* 커서 투명도를 설정 */
+    font-family: Arial, Helvetica, sans-serif;
+}
+#source{
+    height: 28px;
+    margin: 10px auto;
+    padding-top: 3px
+
+}
+#content{
+    height: 337px;
+    margin: 10px auto;
+    padding-top:5px;
+}
+#appl_center{
+    height: 25px;
+    width: 200px;
+    font-size: 18px;
+    padding-left: 10px;
+    background-color: #d9d9d9;
+    border: none;
+    margin:5px 0 15px 0;
+    border-radius: 2px;
+    font-weight: bold;
+}
+input[type="file"]{
+    padding: 5px;             
+    margin: 5px auto;
+    width: 500px;
+    background-color: #d9d9d9;
+    border-radius: 5px;
+}
+.attachmentList{/*첨부파일 유무*/
+	text-align:left;
+	margin: 5px 0 10px 0;
+}
+.attachmentList span{
+	background-color:#d9d9d9;
+	padding: 3px 10px;
+	color:#999696;
+	font-weight:bold;
+}
+#download_file{
+	background-color: #d9d9d9;
+	margin-left:20px;
+	border-radius:5px;
+	padding:2px 5px;
+}
+.appl-btn{
+    margin-top: 30px;
+    text-align: end;
+    text-align: center;
+    
+}
+.appl-btn input{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #d9d9d9;
+    border-radius:5px;
+    border:none;
+    width:100px;
+    color:black;    
+}
+/* 관리자 디테일 페이지 지원자 기본정보 */
+.user-info{
+	font-weight: bold;
+	border:1px solid black;
+	border-radius:5px;
+	background-color:#ebe8e8;
+	margin-bottom:20px;
+}

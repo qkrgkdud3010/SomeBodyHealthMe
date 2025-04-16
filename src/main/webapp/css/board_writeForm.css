@@ -1,0 +1,101 @@
+.page-main{
+	display: flex;
+	justify-content: space-between;
+	width:1450px;
+	clear:both;
+}
+.container{
+    border: 1px solid black;
+    padding: 20px;
+    width: 1080px;
+    margin: 20px 0 0 10px;
+}
+input[type="button"]{
+	cursor: pointer;
+}
+
+h2{
+    padding-left: 20px;
+}
+h2 span{
+    background-color: #eceaea;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.align-end{
+    text-align: end;
+    margin-right: 40px;
+}
+form{   
+    padding-left: 20px;
+}
+.form-group{
+    margin: 10px auto;
+    font-size: 20px; 
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.form-group label{
+    display: block;
+    margin: 0 0 10px 10px;
+}
+#board_category{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #eceaea;
+    padding: 3px 5px;
+    width:200px;
+}
+#board_title{
+    padding: 0px 10px;
+    background-color: #eceaea;
+    resize: none;
+    font-size: 20px;
+    width: 1000px;
+    height: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+     caret-color: black; /* 깜빡이는 커서 색상 설정 */
+    visibility: visible; /* 커서가 보이도록 설정 */
+    opacity: 1; /* 커서 투명도를 설정 */
+}
+#board_attachment{
+    width: 600px;
+    border: 1px solid black;
+    height: 28px;
+    padding: 4px 5px;
+    background-color: #eceaea;
+    font-size: 16px;
+    font-weight: bold;
+}
+#db_attachment img{
+    font-weight: bold;
+    display: block;
+    margin: 5px 0 ;
+}
+#db_attachment span{
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight:bold;	
+}
+#board_content{
+    background-color: #eceaea;
+    resize: none;
+    width: 1000px;
+    height: 600px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+     caret-color: black; /* 깜빡이는 커서 색상 설정 */
+    visibility: visible; /* 커서가 보이도록 설정 */
+    opacity: 1; /* 커서 투명도를 설정 */
+}
+input[type="button"],input[type="submit"]{
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px;
+    border: none;
+    background-color: #eceaea;    
+}

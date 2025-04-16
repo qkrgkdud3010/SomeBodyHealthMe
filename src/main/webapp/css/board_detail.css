@@ -1,0 +1,299 @@
+.page-main{
+	display: flex;
+	justify-content: space-between;
+	width:1450px;
+}
+input[type="button"]{
+	cursor: pointer;
+}
+ /*전체  */
+ .board {
+    width: 1080px;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;  
+    flex-grow: 1;
+    float:left;
+}
+/* 메뉴명 , 수정 삭제 버튼 */
+.page-top {
+    display: flex;
+    justify-content: space-between; /* 왼쪽과 오른쪽에 배치 */
+    align-items: center; /* 세로 정렬 */
+    border-bottom: 3px solid black; 
+    padding-bottom: 10px;
+}
+h2 {
+    border-radius: 5px;
+    margin: 5px 0 10px 0; /* 위아래 여백만 */
+    padding: 3px 10px;
+    background-color: #d9d9d9;
+    font-size: 30px;
+}
+.board-btn {
+    display: flex;
+    gap: 10px; /* 버튼들 간 간격 */
+    padding-right: 10px;
+}
+.board-btn input{
+	font-size : 16px;
+	background-color : #d9d9d9;
+	border:none;
+	border-radius:5px;
+	padding: 5px 10px;
+	font-weight:bold;
+}
+
+/* 제목 및 작성자 조회수 등 */
+.board-info {
+    border-bottom: 1px solid black;
+    margin: 5px 0; /* 위아래 여백 */
+    padding: 0 15px 5px 15px;
+}
+#boardCate{
+	font-size: 14px;
+	cursor: pointer;
+}
+.board-info h3{
+    margin: 0 auto;
+    font-size: 24px;
+}
+/* 작성자 조회수 */
+.info-detail {
+    display: flex;
+    justify-content: space-between; /* 두 div를 좌우로 배치 */
+    font-size: 15px;
+}
+.info-detail div {
+    display: flex;
+    gap: 10px; /* span들 간 간격 */
+    margin-left: 2px;
+}
+.info-detail span {
+    margin-right: 10px; /* 각 항목 간 간격 */
+}
+/* 작성 내용  */
+.board-attachment{
+	text-align:center;
+}
+.board-attachment img{
+	max-width: 100%;
+	margin-bottom: 30px;
+}
+.board-content{
+    font-size: 17px;
+    line-height: 1.6;
+    margin: 10px auto;
+    min-height: 50vh;          
+    padding: 20px 15px;
+    border-bottom:2px solid black;
+	
+}
+/* 하단 신고 좋아요 버튼 */
+.board-end {
+    display: flex; /* 요소들을 한 줄로 배치 */
+    justify-content: flex-end; /* 우측 */
+    align-items: center; /* 세로 정렬 */
+    margin-top: 10px;
+    gap: 10px;
+    padding: 0 10px 10px 0;
+    border-bottom: 2px solid black;
+}
+
+/*======================
+ 댓글 시작 
+========================= */
+.re-none{
+	text-align:center;
+	padding: 20px 0;
+	margin-top: 10px;
+}
+#reply{
+    padding: 5px;
+    border-bottom: 2px solid black;
+}
+
+ h3{
+    margin: 5px 15px 5px 15px;
+}
+.reply-form{
+display: flex;         /* flexbox 사용 */
+justify-content: space-between; /* 항목들 사이에 균등한 간격 */
+align-items: center;
+margin:  0 15px;
+}
+#profile{
+    text-align: center;
+    width: 116px;
+    font-size:15px;
+    font-weight:bold;
+}
+#profile img{
+    
+    width: 60px;
+    border-radius: 50%;
+    border:1px solid black;
+}
+/* 폼 전체 */
+#re_form {
+display: flex;         /* form 안의 div 요소들을 가로로 정렬 */
+gap: 10px;             /* div들 사이에 간격을 설정 (필요에 따라 조정) */    
+width: 900px;
+}
+#re_form h4{
+    padding: 0;
+    margin: 0 0 5px 0;
+}
+#re_content{
+width: 800px; /* 텍스트 영역 너비 */
+height: 80px; /* 텍스트 영역 높이 */
+resize: none;
+padding:5px 0 0 8px;
+border-radius: 5px;
+margin-bottom: 8px; /* 간격 추가 */
+line-height: 20px;
+background-color: #ecebeb;
+color: black;
+font-size: 16px;
+font-weight:bold;
+font-family: Arial, Helvetica, sans-serif;
+ caret-color: black; /* 깜빡이는 커서 색상 설정 */
+    visibility: visible; /* 커서가 보이도록 설정 */
+    opacity: 1; /* 커서 투명도를 설정 */
+}
+
+#re_form input[type="submit"]{
+    width: 80px; height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 10px ;    
+    background-color:#d9d9d9;        
+}
+
+/* ==============
+댓글 목록 시작
+================= */
+#loading{
+	text-align:center;
+}
+
+.sub-item{
+    display: flex;
+    padding: 0 0 0 30px;
+    /* 가로 중앙 정렬 */
+}
+/* 사진 닉네임 */
+.re-profile{
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px 0px;
+    margin-left: 0px;
+    width: 120px;   
+}
+/* 사진 */
+.re-profile img{
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.list-nick_name{
+	font-size:15px;
+	font-weight:bold;
+}
+/* 내용 */
+.item p{
+    width: 700px;
+    margin: 10px 0;
+    padding: 8px 10px 10px 8px;
+    border-radius: 5px;
+    background-color: #ecebeb;
+    font-size:16px;
+    font-family: Arial, Helvetica, sans-serif;
+    white-space: normal; /* 텍스트는 기본적으로 줄바꿈되도록 */
+    word-wrap: break-word; /* 긴 단어가 넘어갈 때 줄바꿈 */
+}
+/* 날짜 및 버튼 */
+.re-date{
+    width: 110px;
+    display: flex;
+    flex-direction: column-reverse;      
+    padding-bottom: 15px;          
+    margin-left: 10px;
+     justify-content: flex-start;
+}
+.paging-button{
+	display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    align-items: center;     /* 세로 중앙 정렬 */
+    margin-top:10px;
+}
+
+/* ==================
+    댓글 수정 시작
+====================*/
+#mre_form{
+    margin: 15px 20px 0 5px;
+    height: 100px;
+    display: flex;
+}
+
+#mre_form textarea{
+    width: 700px;
+    min-height: 80px;
+    margin: 0;
+    resize: none;
+    padding: 5px 5px 0 5px;
+    font-size: 15px;
+    background-color: white;   
+}
+.mre-form-btn{
+    align-content: end;
+}
+#mre_form input{
+    margin: 5px 0 0 2px;
+    border:none;
+    width:40px;
+    border-radius:3px;
+    font-size:13px;
+    background-color: #f0f0f0;
+    border: 1px solid black;
+    padding:0;
+}
+input[type="button"]{
+	cursor:pointer;
+}
+#mre_content{
+	margin-left:60px;
+	height:60px;
+	margin-bottom:20px;
+	border-radius: 5px;
+}
+#mre_first{
+	padding-top:30px;
+	margin-left:10px;
+}
+/* 사진 닉네임 */
+.mre-profile{
+    text-align: center;
+   	height:100px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    width: 120px;   
+    
+}
+/* 사진 */
+.mre-profile img{
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.re-reset{
+	height:21px;
+	font-size:16px;
+	padding:1px 2px;
+}
+
+.mre-title{
+	margin:0 40px;
+	
+	
+}
