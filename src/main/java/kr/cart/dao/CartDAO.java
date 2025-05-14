@@ -19,7 +19,7 @@ public class CartDAO {
 	}
 	private CartDAO() {}
 	
-	//장바구니 등록
+	//장바구니를 등록합니다
 		public void insertCart(CartVO cart)throws Exception{
 			Connection conn = null;
 			PreparedStatement pstmt = null;
